@@ -4,20 +4,36 @@
   100% {top: 0; opacity: 1;}
 }
 body,h1 {font-family: "Raleway", sans-serif; margin: 0; height: 100%;}
-html {height: 100%; margin: 0;}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
 .bgimg {
-  background-image: url('../img/bag.png'); /* Adjusted path because CSS file is in css/ folder */
-  min-height: 100%;
+  background-image: url('../img/bag.png');
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  z-index: -2;
 }
 .overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
+
 .navbar {
   background-color: rgba(0,0,0,0.01);
   position: fixed;
@@ -54,7 +70,11 @@ hr {
 
 @media only screen and (max-width: 600px) {
   .content {
-    padding: 0 10px !important;
+    margin-left: 2vw !important;
+    margin-right: 2vw !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 95vw !important;
   }
   .w3-jumbo {
     font-size: 3rem !important; /* Smaller jumbo text */
@@ -66,3 +86,5 @@ hr {
     width: 60% !important; /* Make the HR smaller on narrow screens */
   }
 }
+
+

@@ -69,3 +69,11 @@ a.back-link:hover {
   margin-top: 10px;
   display: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .login-box {
+    margin-left: 2vw !important;
+    margin-right: 2vw !important;
+    max-width: 95vw !important;
+  }
+}
