@@ -1,18 +1,68 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-<title>Test Page</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,p {font-family: "Raleway", sans-serif; text-align:center; padding-top: 50px;}
-</style>
-</head>
-<body>
-<h1>Test Page</h1>
-<p>You have successfully logged in. Congrats. Now what??</p>
-</body>
+  <head>
+    <title>Test Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <style>
+      body,
+      h1 {
+        font-family: "Raleway", sans-serif;
+        text-align: center;
+        padding-top: 30px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        max-width: 800px;
+        margin: auto;
+        margin-top: 50px;
+      }
+      .box {
+        padding: 30px;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .box:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <p>You have successfully logged in. Choose an option below:</p>
+
+    <div class="grid">
+      <div
+        class="box"
+        onclick="window.open('https://aalling93-my-site-app-kzwtkf.streamlit.app/','_blank')"
+      >
+        <h2>CV</h2>
+        <p> </p>
+      </div>
+
+      <div class="box" onclick="alert('You do not have access to Git Server.')">
+        <h2>Git Server</h2>
+        <p> </p>
+      </div>
+
+      <div class="box" onclick="alert('You do not have access to Nextcloud.')">
+        <h2>Nextcloud</h2>
+        <p> </p>
+      </div>
+
+      <div class="box" onclick="alert('You do not have access to Private.')">
+        <h2>Private</h2>
+        <p> </p>
+      </div>
+    </div>
+  </body>
 </html>
