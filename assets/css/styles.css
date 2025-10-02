@@ -1,0 +1,53 @@
+
+@keyframes slideDownLonger {
+  0% {top: -150px; opacity: 0;}
+  100% {top: 0; opacity: 1;}
+}
+body,h1 {font-family: "Raleway", sans-serif; margin: 0; height: 100%;}
+html {height: 100%; margin: 0;}
+.bgimg {
+  background-image: url('../img/bag.png'); /* Adjusted path because CSS file is in css/ folder */
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.navbar {
+  background-color: rgba(0,0,0,0.01);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  float: right;
+}
+.navbar a:hover {
+  background-color: #555;
+}
+.content {
+  position: absolute;
+  bottom: 25%; /* Moved inline style to CSS */
+  width: 100%;
+  color: white;
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+}
+.w3-jumbo.w3-animate-top {
+  position: relative;
+  animation: slideDownLonger 6s ease forwards;
+}
+hr {
+  border-color: #999;
+}

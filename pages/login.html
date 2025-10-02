@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../assets/css/styles_login.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+<div class="bgimg"></div>
+<div class="overlay"></div>
+<div class="login-box">
+  <h1>Login Page</h1>
+  <form id="loginForm">
+    <input type="text" id="username" name="username" placeholder="Username" required><br>
+    <input type="password" id="password" name="password" placeholder="Password" required><br>
+    <button type="submit">Log In</button>
+  </form>
+  <p id="errorMessage"></p>
+  <a href="../index.html" class="back-link">Back to Landing Page</a>
+</div>
+<script src="../assets/js/scripts.js"></script>
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+
+  if(username === 'test123' && password === 'passwordtest123') {
+    window.location.href = 'test_page.html';
+  } else {
+    const errorMessage = document.getElementById('errorMessage');
+    errorMessage.style.display = 'block';
+    errorMessage.textContent = 'Invalid username or password';
+  }
+});
+</script>
+</body>
+</html>

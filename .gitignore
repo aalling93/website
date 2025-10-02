@@ -1,0 +1,46 @@
+
+
+# GitHub Pages / Static Website .gitignore Template
+# Based on common practices for static sites (HTML/CSS/JS) with assets.
+# Sources: github/gitignore (general templates) and best practices for web projects[82][84][85].
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.DS_STORE
+# Ignore editor/IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore local environment files (for secrets like username/password)
+.env
+.env.local
+*.env
+
+# Ignore build artifacts or temporary files
+tmp/
+temp/
+*.tmp
+*.log
+
+# Ignore node_modules if you add any JS dependencies (e.g., for build tools)
+node_modules/
+
+# Ignore any local backups or archives
+*.bak
+*.zip
+*.tar.gz
+
+# If you have Python or other tools (from your background), ignore those
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Project-specific: Ignore any sensitive or unnecessary assets
+# (Add custom paths here if needed, e.g., for large images or dev files)
+assets/private/
+
+# Keep important files: Your HTML, CSS, JS, and public assets will be tracked.
