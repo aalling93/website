@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,21 +21,5 @@
   <a href="../index.html" class="back-link">Back to Landing Page</a>
 </div>
 <script src="../assets/js/scripts.js"></script>
-<script>
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
-
-
-  if(username === 'test123' && password === 'pw123') {
-    window.location.href = 'test_page.html';
-  } else {
-    const errorMessage = document.getElementById('errorMessage');
-    errorMessage.style.display = 'block';
-    errorMessage.textContent = 'Invalid username or password';
-  }
-});
-</script>
 </body>
 </html>
