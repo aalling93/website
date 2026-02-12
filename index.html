@@ -1,31 +1,70 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-<title>Landing Page</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Link  CSS -->
-<link rel="stylesheet" href="assets/css/styles.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aalling93 - Home</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true"></div>
+    <div class="site-noise" aria-hidden="true"></div>
 
-<div class="navbar">
-  <a href="pages/login.html">Log In</a>
-</div>
+    <header class="topbar">
+      <a class="brand" href="/index.html">Aalling93</a>
+      <nav class="top-links" aria-label="Main navigation">
+        <a class="link-btn" href="/guest.html">Guest</a>
+        <a class="link-btn accent" href="/login.html">Log In</a>
+      </nav>
+    </header>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="overlay"></div>
-  <div class="content" style="bottom: 25%;">
-    <h1 class="w3-jumbo w3-animate-top">Aalling93</h1>
-    <hr style="margin:auto; width:40%">
-    <p class="w3-large">Be patient. Maybe something good will be shown here at one point.</p>
-  </div>
-</div>
+    <main>
+      <section class="hero">
+        <h1>Aalling93</h1>
+        <p>
+          Be patient. Maybe something good will be shown here at one point. This is now your full
+          control panel website foundation.
+        </p>
+        <div class="hero-actions">
+          <a class="link-btn" href="/guest.html">Open Guest Area</a>
+          <a class="link-btn accent" href="/login.html">Open Private Portal</a>
+        </div>
+      </section>
 
-<!--  external JS  -->
-<script src="assets/js/scripts.js"></script>
+      <section class="section">
+        <h2>Core Services</h2>
+        <p class="section-subtitle">
+          These sections are ready for your links when GitLab, Nextcloud, CV and your own apps are live.
+        </p>
+        <div class="card-grid">
+          <article class="portal-card">
+            <h3>GitLab</h3>
+            <p>Private repositories, CI/CD and project boards.</p>
+            <a class="card-link" href="/portal.html">Open in Portal</a>
+          </article>
+          <article class="portal-card">
+            <h3>CV</h3>
+            <p>Public-facing profile, resume and project references.</p>
+            <a class="card-link" href="/portal.html">Open in Portal</a>
+          </article>
+          <article class="portal-card">
+            <h3>Nextcloud</h3>
+            <p>Documents, backups and shared folders.</p>
+            <a class="card-link" href="/portal.html">Open in Portal</a>
+          </article>
+          <article class="portal-card">
+            <h3>My Web App</h3>
+            <p>Your internal utility apps and dashboards.</p>
+            <a class="card-link" href="/portal.html">Open in Portal</a>
+          </article>
+        </div>
 
-</body>
+        <div class="muted-block">
+          Login is now separate from GitHub accounts. Credentials are managed by your own local auth file and server.
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">aalling93.com</footer>
+  </body>
 </html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-label="Neighborhood">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#84b0b0" />
+      <stop offset="100%" stop-color="#33535d" />
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)" />
+  <circle cx="220" cy="180" r="120" fill="rgba(255,255,255,0.22)" />
+  <path d="M0 640 C 240 560, 380 730, 640 620 C 840 530, 1040 700, 1400 560 L1400 900 L0 900 Z" fill="rgba(255,255,255,0.15)" />
+  <path d="M0 720 C 200 660, 460 830, 760 690 C 1030 560, 1150 790, 1400 680 L1400 900 L0 900 Z" fill="rgba(255,255,255,0.18)" />
+  <text x="80" y="790" fill="rgba(255,255,255,0.88)" font-family="Arial, sans-serif" font-size="68" font-weight="700">Neighborhood</text>
+</svg>

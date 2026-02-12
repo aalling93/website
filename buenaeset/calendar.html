@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Buenaeset - Calendar</title>
+    <link rel="stylesheet" href="/assets/css/buenaeset.css" />
+  </head>
+  <body>
+    <header class="buena-top">
+      <div class="buena-top-inner">
+        <a class="buena-brand" href="/buenaeset/">Buenaeset</a>
+        <nav class="buena-links" aria-label="Buenaeset navigation">
+          <a class="buena-link" href="/buenaeset/">Front Page</a>
+          <a class="buena-link" href="/buenaeset/info.html">Information</a>
+          <a class="buena-link active" href="/buenaeset/calendar.html">Calendar</a>
+          <a class="buena-link" href="/buenaeset/gallery.html">Gallery</a>
+          <a class="buena-link" href="/buenaeset/projects.html">Projects</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="buena-hero" style="background-image: url('/assets/img/buenaeset/scene-7.svg'); min-height: 38vh;">
+      <div class="buena-hero-inner">
+        <h1>Availability Calendar</h1>
+        <p>Live occupancy view for guests and planning.</p>
+      </div>
+    </section>
+
+    <main class="buena-shell">
+      <div class="calendar-wrap">
+        <div class="cal-header">
+          <button id="prev-month" type="button">Previous</button>
+          <h2 id="month-label" style="margin: 0; font-family: 'Newsreader', serif; color: #113f53;"></h2>
+          <button id="next-month" type="button">Next</button>
+        </div>
+        <div id="calendar-grid" class="cal-grid"></div>
+      </div>
+
+      <div class="panel" style="margin-top: 16px;">
+        <h3>Legend</h3>
+        <ul>
+          <li><strong>Green:</strong> fully available.</li>
+          <li><strong>Yellow:</strong> changeover day / partial hold.</li>
+          <li><strong>Orange:</strong> booked.</li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="/assets/js/buenaeset-calendar.js" defer></script>
+  </body>
+</html>

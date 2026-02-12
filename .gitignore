@@ -34,6 +34,9 @@ node_modules/
 *.zip
 *.tar.gz
 
+# Local auth database
+data/users.json
+
 # If you have Python or other tools (from your background), ignore those
 __pycache__/
 *.py[cod]

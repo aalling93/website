@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aalling93 - Private Portal</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true"></div>
+    <div class="site-noise" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="/index.html">Aalling93</a>
+      <nav class="top-links" aria-label="Main navigation">
+        <span id="account-chip" class="account-chip">Checking session...</span>
+        <a id="logout-btn" class="link-btn" href="#">Log Out</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="white-panel">
+        <h1 class="small-title">Private Service Portal</h1>
+        <p>Only authenticated users can access this page.</p>
+
+        <div class="card-grid">
+          <article class="portal-card">
+            <h3>GitLab</h3>
+            <p>Set this link to your self-hosted GitLab instance when ready.</p>
+            <a class="card-link" data-service-link="gitlab" href="#">Configure Link</a>
+          </article>
+          <article class="portal-card">
+            <h3>Nextcloud</h3>
+            <p>Personal and team file cloud endpoint.</p>
+            <a class="card-link" data-service-link="nextcloud" href="#">Configure Link</a>
+          </article>
+          <article class="portal-card">
+            <h3>CV</h3>
+            <p>Public CV and portfolio destination.</p>
+            <a class="card-link" data-service-link="cv" href="#">Configure Link</a>
+          </article>
+          <article class="portal-card">
+            <h3>My Web App</h3>
+            <p>Internal tool dashboard or custom app.</p>
+            <a class="card-link" data-service-link="app" href="#">Configure Link</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="/assets/js/portal.js" defer></script>
+  </body>
+</html>

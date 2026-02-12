@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aalling93 - Login</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true"></div>
+    <div class="site-noise" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="/index.html">Aalling93</a>
+      <nav class="top-links" aria-label="Main navigation">
+        <a class="link-btn" href="/guest.html">Guest</a>
+        <a class="link-btn accent" href="/login.html">Log In</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="white-panel" style="max-width: 540px; margin: 0 auto;">
+        <h1 class="small-title">Private Login</h1>
+        <p>This login is independent from GitHub. Accounts are managed in your own local user database.</p>
+
+        <form id="login-form" novalidate>
+          <div class="form-row">
+            <label for="username">Username</label>
+            <input class="input" id="username" name="username" autocomplete="username" required />
+          </div>
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input class="input" id="password" name="password" type="password" autocomplete="current-password" required />
+          </div>
+          <button class="button-primary" type="submit">Log In</button>
+          <p id="status" class="status-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="muted-block">
+          First setup: run <code>npm run create-user -- your_username</code> in this project, then start the server.
+        </div>
+      </section>
+    </main>
+
+    <script src="/assets/js/login.js" defer></script>
+  </body>
+</html>
